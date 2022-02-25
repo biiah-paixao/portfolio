@@ -70,10 +70,6 @@ $(document).ready(function(){
             }
         }
     });
-});
-
-
-
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
@@ -93,3 +89,10 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
+
+
+});
+
+
+
+
