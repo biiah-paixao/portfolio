@@ -302,6 +302,12 @@ section .title::after{
     border: 2px solid #621f86;
     padding: 10px 30px;
 }
+
+.download{
+    padding: 10px;
+}
+
+
 .about .social-media{
     font-size: 24px;
     transition: all 0.3s ease;
@@ -419,20 +425,32 @@ section .title::after{
     top: 0;
     background: #621f86;
 }
-.skills-content .right .html::before{
+.skills-content .right .noventa::before{
     width: 90%;
 }
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
+.skills-content .right .oitenta::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.skills-content .right .setenta::before{
+    width: 70%;
+}
+.skills-content .right .sessenta::before{
+    width: 60%;
+}
+.skills-content .right .cinquenta::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
-    width: 70%;
+.skills-content .right .quarenta::before{
+    width: 40%;
+}
+.skills-content .right .trinta::before{
+    width: 30%;
+}
+.skills-content .right .vinte::before{
+    width: 20%;
+}
+.skills-content .right .dez::before{
+    width: 10%;
 }
 
 /* projects section styling */
@@ -760,4 +778,73 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================== SKILLS ====================*/
+.skills__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.skills__div{
+    display: flex;
+    flex-direction: row;
+}
+
+.skills__icon, .skills__arrow{
+    font-size: 2rem;
+    color: #6e57e0;
+}
+
+.skills__icon{
+    margin-right: .75rem;
+}
+
+.skills__subtitle{
+    font-size: .813rem;
+    color:#6d6a7c;
+}
+
+.skills__arrow{
+    margin-left: .75rem;
+    transition: .4s;
+}
+
+.skills__list{
+    row-gap: 1.5rem;
+    padding-left: .5rem;
+}
+
+.skills__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: 2.5rem;
+}
+
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
 }
