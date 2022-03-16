@@ -26,13 +26,17 @@ html{
     background: #555;
 }
 
+
+a:-webkit-any-link{
+    color: #fff;
+}
 /* all similar content styling codes */
 section{
     padding: 100px 0;
 }
 .max-width{
     max-width: 1300px;
-    padding: 0 80px;
+    padding-left: 80px;
     margin: auto;
 }
 .about, .services, .skills, .projects, .contact, footer{
@@ -174,19 +178,18 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: black url("images/Ativo\ 30.png") no-repeat 480px;
-    
+    background: black url("images/Ativo\ 30.png") no-repeat 33vw 10vh;
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    background-size: 800px;
+    background-size: 1200px;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
     margin-left: 0;
     margin-right: 0;
-    width: 55%;
+    width: 100%;
     display: flex;
 }
 .home .max-width .row{
@@ -208,6 +211,11 @@ section .title::after{
     color: #621f86;
     font-weight: 500;
 }
+
+.home .home-icons{
+    display: inline-block;
+}
+
 .home .home-content a{
     display: inline-block;
     color: #fff;
@@ -460,7 +468,7 @@ section .title::after{
 .projects .carousel .card{
     background: #222;
     border-radius: 6px;
-    padding: 0px 0px 25px;
+    padding: 0px 0px 50px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -492,6 +500,22 @@ section .title::after{
 .projects .carousel .card:hover img{
     border-color: #fff;
 }
+
+.projects-icons{
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    padding: 10px;
+    color: #FFF;
+}
+
+.projects-icon{
+    padding: 2px;
+}
+
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -638,7 +662,15 @@ footer span a:hover{
 }
 
 /* responsive media query start */
+@media (max-width: 1440px) {
+
+    .home{
+        background-position: 43vw 10vh;
+    }
+}
+
 @media (max-width: 1104px) {
+
     .sobre__blob {
         width: 350px;
         fill: #621f86;
@@ -659,12 +691,20 @@ footer span a:hover{
     .sobre__blob-img {
         width: 400px;
     }
+
+    .contact .contact-content .left .icons{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    
 }
 
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
+
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -672,7 +712,7 @@ footer span a:hover{
         z-index: 999;
     }
     .menu-btn i.active:before{
-        content: "\f00d";
+        content: "\621f86";
     }
     .navbar .menu{
         position: fixed;
@@ -704,8 +744,8 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 23px;
-        padding: 10px 30px;
     }
+
     .max-width{
         max-width: 930px;
     }
