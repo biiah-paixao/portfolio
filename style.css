@@ -35,8 +35,9 @@ section{
     padding: 100px 0;
 }
 .max-width{
-    max-width: 1300px;
+    max-width: 1500px;
     padding-left: 80px;
+    padding-right: 80px;
     margin: auto;
 }
 .about, .services, .skills, .projects, .contact, footer{
@@ -254,7 +255,7 @@ section .title::after{
 }
 /*----------------*/
 .sobre__blob {
-    width: 400px;
+    width: 415px;
     fill: #621f86;
 }
 
@@ -264,20 +265,25 @@ section .title::after{
 }
 
 .blob2 {
-    width: 405px;
+    width: 420px;
     transform: rotate(50deg);
     position: relative;
 
 }
 
 .sobre__blob-img {
-    width: 400px;
+    width: 220px;
+}
+
+.sobre__img{
+    display: flex;
+    justify-content: center;
 }
 
 /*----------------*/
 
 .about .about-content .right{
-    width: 45%;
+    width: 55%;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -672,7 +678,7 @@ footer span a:hover{
 @media (max-width: 1104px) {
 
     .sobre__blob {
-        width: 350px;
+        width: 365px;
         fill: #621f86;
     }
     
@@ -682,14 +688,10 @@ footer span a:hover{
     }
     
     .blob2 {
-        width: 355px;
+        width: 370px;
         transform: rotate(50deg);
         position: relative;
     
-    }
-    
-    .sobre__blob-img {
-        width: 400px;
     }
 
     .contact .contact-content .left .icons{
@@ -697,12 +699,20 @@ footer span a:hover{
         flex-flow: row wrap;
     }
 
-    
+    .sobre__img{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
+    }
+
+    .sobre__img{
+        display: flex;
+        justify-content: start;
     }
 
 }
