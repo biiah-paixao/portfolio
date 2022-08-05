@@ -1,5 +1,7 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -84,7 +86,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #621f86;
+    color: #7444B1;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -96,12 +98,13 @@ section .title::after{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: #621f86;
+    background: #070132;
+    /* background: #7444B1; */
 }
 .navbar .max-width{
     display: flex;
@@ -115,6 +118,7 @@ section .title::after{
     font-weight: 600;
     display: flex;
     align-items: center;
+    font-family: 'Lora', serif;
 }
 
 .navbar .logo img{
@@ -134,7 +138,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #621f86;
+    color: #F0AE23;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -151,7 +155,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #621f86;
+    background: #7444B1;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -179,12 +183,11 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: black url("images/Ativo\ 30.png") no-repeat 33vw 10vh;
+    background: black url("images/Ativo\ 30.png") no-repeat;
     height: 100vh;
     color: #fff;
-    min-height: 500px;
-    background-size: 1200px;
-    background-attachment: fixed;
+    background-size: 120vh;
+    background-position: 90% center;
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
@@ -197,19 +200,19 @@ section .title::after{
   margin-right: 0;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 1.5em;
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 4.5em;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 2.5em;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #621f86;
+    color: #D90B72;
     font-weight: 500;
 }
 
@@ -220,26 +223,26 @@ section .title::after{
 .home .home-content a{
     display: inline-block;
     color: #fff;
-    font-size: 25px;  
+    font-size: 1.5em;  
     margin-top: 20px;
     font-weight: 400;
    
     transition: all 0.3s ease;
 }
 .home .home-content .sb:hover{
-    color: #621f86;
+    color: #7F2187;
     background: none;
 }
 
 .sb{
-    background: #621f86;
+    background: #7F2187;
     border-radius: 6px;
-    border: 2px solid #621f86;
+    border: 2px solid #7F2187;
     padding: 12px 36px;
 }
 
 .home .social-media{
-    font-size: 24px;
+    font-size: 1.5em;
     transition: all 0.3s ease;
     padding: 10px;
     color: #FFF;
@@ -256,7 +259,7 @@ section .title::after{
 /*----------------*/
 .sobre__blob {
     width: 415px;
-    fill: #621f86;
+    fill: #3AB4E8;
 }
 
 .blob {
@@ -671,7 +674,7 @@ footer span a:hover{
 @media (max-width: 1440px) {
 
     .home{
-        background-position: 43vw 10vh;
+        background-size: 110vh;
     }
 }
 
@@ -744,16 +747,16 @@ footer span a:hover{
     .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
-        font-size: 25px;
+        font-size: 1.5em;
     }
     .home .home-content .text-2{
-        font-size: 70px;
+        font-size: 4.5em;
     }
     .home .home-content .text-3{
-        font-size: 35px;
+        font-size: 2em;
     }
     .home .home-content a{
-        font-size: 23px;
+        font-size: 1.5em;
     }
 
     .max-width{
@@ -786,13 +789,13 @@ footer span a:hover{
         padding: 0 23px;
     }
     .home .home-content .text-2{
-        font-size: 60px;
+        font-size: 3.7em;
     }
     .home .home-content .text-3{
-        font-size: 32px;
+        font-size: 2em;
     }
     .home .home-content a{
-        font-size: 20px;
+        font-size: 1.25em;
     }
     .services .serv-content .card{
         width: 100%;
@@ -801,7 +804,7 @@ footer span a:hover{
 
 @media (max-width: 500px) {
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 3em;
     }
     .home .home-content .text-3{
         font-size: 27px;
