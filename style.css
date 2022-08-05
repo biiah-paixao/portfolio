@@ -200,15 +200,15 @@ section .title::after{
   margin-right: 0;
 }
 .home .home-content .text-1{
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 .home .home-content .text-2{
-    font-size: 4.5em;
+    font-size: 4rem;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
-    font-size: 2.5em;
+    font-size: 1.7rem;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
@@ -223,7 +223,7 @@ section .title::after{
 .home .home-content a{
     display: inline-block;
     color: #fff;
-    font-size: 1.5em;  
+    font-size: 1.5rem;  
     margin-top: 20px;
     font-weight: 400;
    
@@ -242,7 +242,7 @@ section .title::after{
 }
 
 .home .social-media{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
     padding: 10px;
     color: #FFF;
@@ -681,11 +681,15 @@ footer span a:hover{
 @media (max-width: 1440px) {
 
     .home{
-        background-size: 110vh;
+        background-size: 100vh;
     }
 }
 
 @media (max-width: 1104px) {
+
+    .home{
+        background-size: 70vh;
+    }
 
     .sobre__blob {
         width: 365px;
@@ -716,6 +720,11 @@ footer span a:hover{
 }
 
 @media (max-width: 991px) {
+
+    .home{
+        background-size: 90vh;
+    }
+
     .max-width{
         padding: 0 50px;
     }
